@@ -4,7 +4,6 @@ import {
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup,
 } from "react-simple-maps";
 
 const Map = () => {
@@ -13,8 +12,8 @@ const Map = () => {
       projection="geoAzimuthalEqualArea"
       projectionConfig={{
         rotate: [-75.0, -26.0, 0],
-        center: [0, -3],
-        scale: 2200,
+        center: [-1, 0],
+        scale: 300,
       }}
       style={{ width: "100%", height: "100%" }}
     >
@@ -40,7 +39,7 @@ const Map = () => {
           strokeLinecap: "round",
         }}
       >
-        <text x="-10" textAnchor="end" alignmentBaseline="middle" fill="#fc5502" fontSize={22}>
+        <text x="-10" textAnchor="end" alignmentBaseline="middle" fill="#f7b655" fontSize={22}>
           {"Jaipur"}
         </text>
       </Annotation>
