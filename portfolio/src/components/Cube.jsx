@@ -1,23 +1,27 @@
 import React, { useRef } from "react";
-import { PerspectiveCamera, RenderTexture, Text } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+import { PerspectiveCamera, RenderTexture } from "@react-three/drei";
+// import { useFrame } from "@react-three/fiber";
+import a from '../img/logo.png'
+import { AmbientLight, TextureLoader } from "three";
 
 const Cube = () => {
   const textRef = useRef();
-  useFrame(
-    (state) =>
-      (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2)
-  );
+  // useFrame(
+  //   (state) =>
+  //     (textRef.current.position.x = Math.sin(state.clock.elapsedTime) * 2)
+  // );
+  const scene = new TextureLoader().load(a);
+  
   return (
-    <mesh>
+    <mesh ref={textRef}>
       <boxGeometry />
-      <meshStandardMaterial>
-        <RenderTexture attach="map">
+      <meshStandardMaterial attach="material" color={"white"} map={scene}>
+        <RenderTexture image={a}>
           <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-          <color attach="background" args={["#e6ac26"]} />
-          <Text ref={textRef} fontSize={3} color="white">
+
+          {/* <Text ref={textRef} fontSize={3} color="white">
             Hi!
-          </Text>
+          </Text> */}
         </RenderTexture>
       </meshStandardMaterial>
     </mesh>

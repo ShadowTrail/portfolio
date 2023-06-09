@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cute cat
+* source:	https://sketchfab.com/3d-models/cute-cat-d1d7c67d1975489f826e01f4b4d1f898
+* author:	miMadara (https://sketchfab.com/miMadara)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cute cat" (https://sketchfab.com/3d-models/cute-cat-d1d7c67d1975489f826e01f4b4d1f898) by miMadara (https://sketchfab.com/miMadara) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

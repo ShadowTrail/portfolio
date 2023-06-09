@@ -81,11 +81,11 @@ const Who = () => {
           <Title>Think outside the square space</Title>
           <What>
             <RxDividerHorizontal style={style} />
-            <Sub>Who are we?</Sub>
+            <Sub>Who shadow creatures are?</Sub>
           </What>
           <Desc>
-            A creative person aspiring to be a designer and developer with a
-            passion for the arts.
+            They enjoy showing off their magical powers to create human centered
+            digital experiences.
           </Desc>
           <Button>See our works</Button>
         </Right>
